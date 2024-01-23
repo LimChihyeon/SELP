@@ -4,7 +4,7 @@ import './App.css';
 function Header() {
   return (
     <header>
-      <h1>나의 홈페이지</h1>
+      <h1>나의 홈</h1>
     </header>
   );
 }
