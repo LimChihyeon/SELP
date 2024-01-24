@@ -18,3 +18,21 @@
   width: 150px;
   height: auto;
 }
+
+.footer.sm {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.service_title {
+  align-items: center;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -.10px;
+}
+
+.service_tel {
+  letter-spacing: normal;
+  margin-left: 4px;
+}
