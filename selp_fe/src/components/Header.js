@@ -1,12 +1,19 @@
-import {Link, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import React from 'react';
+import '../styles/App.css';
+import Logo from '../styles/logo.png';
 
 const Header = () => {
   return (
     <header>
-      <Link to="/">홈</Link>
-      &nbsp;&nbsp; | &nbsp;&nbsp;
-      <Link to="/item">게시판</Link>
+      <div style={{ display: 'flex', alignItems: 'center'}}>
+        <div style={{marginRight : 'auto', marginLeft : '350px'}}><img src = {Logo} alt="logo" className="top_logo"/></div>
+        <div style={{ marginLeft: 'auto', marginRight : '350px' }}>
+          <NavLink to="/" className="top_item" activestyle="top_item.active">HOME</NavLink>
+          <NavLink to="/item" className="top_item" activestyle="top_item.active">STYLE</NavLink>
+          <NavLink to="/shop" className="top_item" activestyle="top_item.active">SHOP</NavLink>
+        </div>
+      </div>
       <hr/>
     </header>
   );
