@@ -33,6 +33,21 @@
   height: auto;
 }
 
+.nav_item {
+  font-family: "Pretendard Variable";
+  color: #222222;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.27px;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+.nav_item.active {
+  font-weight: 700;
+}
 .footer.sm {
   padding-left: 16px;
   padding-right: 16px;

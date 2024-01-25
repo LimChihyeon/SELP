@@ -2,7 +2,7 @@ import React from "react";
 import Gnb from "./Gnb";
 import Logo from "./Logo";
 import Top from "./Top";
-
+import NavBar from "./NavBar";
 const Header = () => {
   return (
     <header>
@@ -12,6 +12,7 @@ const Header = () => {
         <Logo />
         <Gnb />
       </div>
+      <NavBar />
       <hr />
     </header>
   );
