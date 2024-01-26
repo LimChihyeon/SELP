@@ -103,3 +103,16 @@ body, html {
   padding-top: 8px;
   white-space: pre-wrap;
 }
+.service_btn {
+  background-color: #222;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  height: 34px;
+  padding: 14px;
+  letter-spacing: -.06px;
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
