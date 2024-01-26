@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Header from './components/Header';
+import Header from './components/Head/Header';
 import Footer from './components/Footer';
 import { BrowserRouter } from 'react-router-dom';
 

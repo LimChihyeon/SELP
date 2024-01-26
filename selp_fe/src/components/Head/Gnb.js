@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-import "../styles/App.css";
+import "styles/App.css";
 
 const Gnb = () => (
   <div
