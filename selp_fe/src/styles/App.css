@@ -3,6 +3,23 @@
   padding: 0;
 }
 
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body, button, input, select, table, textarea {
+  color: #222;
+  font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+body, button, html, input, select, table, textarea {
+  font-feature-settings: "frac" 0,"numr" 0;
+}
+body, html {
+  height: 100%;
+  touch-action: manipulation;
+  word-break: break-all;
+}
+
 .top_item {
   font-family: "Pretendard Variable";
   align-items: center;
@@ -53,11 +70,23 @@
   cursor: pointer;
   position: relative;
 }
-.footer.sm {
-  padding-left: 16px;
-  padding-right: 16px;
+.footer {
+  border-top: 1px solid #ebebeb;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-
+.service_area {
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 56px
+}
 .service_title {
   align-items: center;
   display: inline-flex;
@@ -65,8 +94,12 @@
   font-weight: 700;
   letter-spacing: -0.1px;
 }
-
 .service_tel {
   letter-spacing: normal;
   margin-left: 4px;
+  color: inherit;
+}
+.service_time {
+  padding-top: 8px;
+  white-space: pre-wrap;
 }
