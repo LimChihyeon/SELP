@@ -1,0 +1,20 @@
+.modal {
+    background-color: rgba(34,34,34,.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1010;
+    }
+.modal_section {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.1);
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 448px;
+}

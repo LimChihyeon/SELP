@@ -100,10 +100,18 @@ body, html {
   color: inherit;
 }
 .service_time {
+  color: rgba(34,34,34,.5);
+  font-size: 13px;
+  letter-spacing: -.07px;
+  line-height: 20px;
+  max-width: 263px;
   padding-top: 8px;
   white-space: pre-wrap;
+  margin-right: 4px;
+  margin-bottom: 17px;
 }
 .service_btn {
+  display: block;
   background-color: #222;
   color: #fff;
   font-size: 12px;
