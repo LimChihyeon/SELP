@@ -6,14 +6,17 @@ import NavBar from "./NavBar";
 const Header = () => {
   return (
     <header>
-      <Top />
-
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <Logo />
-        <Gnb />
+      <div className="header_fixed">
+        <div className="header_top">
+          <Top />
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Logo />
+            <Gnb />
+          </div>
+        </div>
+        <NavBar />
+        <hr />
       </div>
-      <NavBar />
-      <hr />
     </header>
   );
 };
