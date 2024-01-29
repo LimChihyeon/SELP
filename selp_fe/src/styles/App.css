@@ -8,7 +8,11 @@
 :before {
   box-sizing: border-box;
 }
-
+li,
+ol,
+ul {
+  list-style: none;
+}
 body,
 button,
 input,
@@ -42,23 +46,36 @@ html {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 3;
 }
 .header_top {
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
 }
+.top_inner {
+  display: flex;
+  height: 22px;
+  padding: 8px 40px 0;
+}
+.top_list {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
 
-.top_item {
-  font-family: "Pretendard Variable";
+.top_item + .top_item {
+  margin-left: 24px;
+}
+.top_link {
   align-items: center;
   color: rgba(34, 34, 34, 0.8);
   display: flex;
   font-size: 12px;
   letter-spacing: -0.06px;
   text-decoration: none;
-  margin-right: 24px;
 }
+
 .gnb_item {
   font-family: "Pretendard Variable";
   color: #222222;
