@@ -1,54 +1,53 @@
 import React from "react";
 import Modal from "react-modal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "styles/Modal.css";
 
-function MenuItems() {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
+const MenuLink = (props) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => {
-        setModalIsOpen(true);
-    }
+        setIsModalOpen(true);
+    };
     const closeModal = () => {
-        setModalIsOpen(false);
-    }
+        setIsModalOpen(false);
+    };
     const customStyles = {
         overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(34, 34, 34, .5)",
+            bottom: "0",
+            left: "0",
+            position: "fixed",
+            right: "0",
+            top: "0",
+            zIndex: "1010",
         },
         content: {
-            width: "300px",
+            backgroundColor: "#fff",
+            left: "50%",
+            overflow: "hidden",
+            position: "absolute",
+            top: "50%",
+            transform: "translate(-50%,-50%",
+            width: "580px",
             height: "400px",
             margin: "auto",
-            borderRadius: "4px",
-            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+            borderRadius: "16px",
+            boxShadow: "0 4px 10px rgba(0, 0, 0, .1)",
             padding: "20px",
         },
     };
 
     return (
         <div>
-            <MenuLink onClick={openModal} text="검수기준" />
-            <MenuLink onClick={openModal} text="이용정책" />
-            <MenuLink onClick={openModal} text="패널티 정책" />
-            <MenuLink onClick={openModal} text="커뮤니티 가이드라인" />
-
-            <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
-                <h1>Modal</h1>
-                <p>Modal content</p>
+            <div onClick={openModal}>{props.text}</div>
+            <Modal isOpen={isModalOpen} onRequestClose={closeModal} style={customStyles}>
+                <p>modal</p>
+                <p>modal content</p>
                 <button onClick={closeModal}>close</button>
             </Modal>
         </div>
     );
 };
 
-const MenuLink = ({ onClick, text }) => {
-    return (
-        <div className="menu_item">
-            <span className="menu_link" onClick={onClick}>
-                {text}
-            </span>
-        </div>
-    );
-};
-
-export default MenuItems;
+export default MenuLink;
