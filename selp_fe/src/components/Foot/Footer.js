@@ -1,6 +1,6 @@
 import React from "react";
 import "styles/App.css";
-import Service from "./Service";
+import CustomerService from "./CustomerService";
 import MenuItems from "./Modal";
 import Menu from "./Menu";
 
@@ -8,8 +8,11 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="inner">
-        <Service />
-        <Menu />
+        <div className="service_area">
+          <CustomerService />
+          <Menu />
+        </div>
+        
             <div className="menu_box">
               <strong className="menu_title">고객지원</strong>
               <ul className="menu_list">

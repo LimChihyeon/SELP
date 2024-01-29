@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "styles/App.css";
 
-const Service = () => {
+const CustomerService = () => {
     return (
         <service>
             <div className="service_title">고객센터 
@@ -20,4 +20,4 @@ const Service = () => {
     );
 };
 
-export default Service;
+export default CustomerService;

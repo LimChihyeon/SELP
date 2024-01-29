@@ -5,10 +5,10 @@ import MenuItems from "./Modal";
 
 const Menu = () => {
     return (
-        <menu>
+        <div className="menu_box">
             <div className="menu_title">이용안내</div>
             <MenuItems />
-        </menu>
+        </div>
     );
 };
 
