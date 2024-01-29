@@ -1,10 +1,10 @@
 import React from "react";
-import Logoimage from "styles/logo.png";
+import { ReactComponent as Logoimg } from "styles/logo.svg";
 
 const Logo = () => {
   return (
-    <div style={{ marginRight: "auto", marginLeft: "335px" }}>
-      <img src={Logoimage} alt="logo" className="top_logo" />
+    <div className="logo">
+      <Logoimg />
     </div>
   );
 };

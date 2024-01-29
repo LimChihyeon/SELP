@@ -1,7 +1,7 @@
 import React from "react";
 import Gnb from "./Gnb";
-import Logo from "./Logo";
 import Top from "./Top";
+import Logo from "./Logo";
 import NavBar from "./NavBar";
 const Header = () => {
   return (
@@ -9,9 +9,14 @@ const Header = () => {
       <div className="header_fixed">
         <div className="header_top">
           <Top />
-          <div style={{ display: "flex", alignItems: "center" }}>
+        </div>
+        <div className="header_main">
+          <div className="main_inner">
             <Logo />
-            <Gnb />
+            <div className="center" />
+            <div className="right">
+              <Gnb />
+            </div>
           </div>
         </div>
         <NavBar />
