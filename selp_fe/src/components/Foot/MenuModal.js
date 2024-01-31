@@ -1,10 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import "styles/Modal.css";
 
-const MenuLink = (props) => {
+const MenuModal = ({ text, content }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => {
         setIsModalOpen(true);
@@ -40,14 +38,13 @@ const MenuLink = (props) => {
 
     return (
         <div>
-            <div onClick={openModal}>{props.text}</div>
+            <div className="menu_item" onClick={openModal}>{text}</div>
             <Modal isOpen={isModalOpen} onRequestClose={closeModal} style={customStyles}>
-                <p>modal</p>
-                <p>modal content</p>
+                {content}
                 <button onClick={closeModal}>close</button>
             </Modal>
         </div>
     );
 };
 
-export default MenuLink;
+export default MenuModal;
