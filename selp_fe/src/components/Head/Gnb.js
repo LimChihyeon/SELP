@@ -1,6 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import React from "react";
 import "styles/App.css";
+import { ReactComponent as Search_icon } from "styles/serach.svg";
 const Gnb = () => (
   <div className="gnb_area">
     <div id="gnb_container">
@@ -31,7 +32,9 @@ const Gnb = () => (
       </ul>
     </div>
     <div style={{ display: "flex", width: "28px", height: "28px" }}>
-      <Link to="/search" style={{ display: "inherit" }}></Link>
+      <Link to="/search" style={{ display: "inherit" }}>
+        <Search_icon />
+      </Link>
     </div>
   </div>
 );

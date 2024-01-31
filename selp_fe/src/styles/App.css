@@ -130,26 +130,45 @@ html {
   font-weight: 700;
 }
 
-.nav_item {
-  font-family: "Pretendard-Regular";
-  color: #222222;
+.home_tabs {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
-  font-size: 15px;
-  line-height: 1.25;
-  letter-spacing: -0.27px;
-  position: relative;
+  flex-wrap: nowrap;
+  height: 44px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.nav_item {
+  display: inline-flex;
+  height: 100%;
+  padding-bottom: 6px;
+  padding-top: 15px;
   text-decoration: none;
-  display: inline-block;
-  margin-right: 50px;
-  height: 30px;
+}
+.nav_item + .nav_item {
+  margin-left: 27px;
 }
 .nav_item.active {
   font-weight: 700;
   border-bottom: 2px solid #222;
-  color: #222;
   cursor: pointer;
   position: relative;
 }
+
+.tab_name {
+  color: #222;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: #fff;
+  position: relative;
+}
+
 .footer {
   border-top: 1px solid #ebebeb;
   margin-left: auto;
@@ -213,7 +232,7 @@ html {
   width: 160px;
   display: block;
 }
-.menu_box+.menu_box {
+.menu_box + .menu_box {
   margin-left: 80px;
 }
 .menu_title {
@@ -232,6 +251,6 @@ html {
   letter-spacing: -0.21px;
   cursor: pointer;
 }
-.menu_item+.menu_item {
+.menu_item + .menu_item {
   margin-top: 12px;
 }

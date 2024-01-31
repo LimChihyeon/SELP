@@ -19,7 +19,9 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <NavBar />
+        <div className="header_portal">
+          <NavBar />
+        </div>
         <hr />
       </div>
     </header>
