@@ -1,11 +1,21 @@
 import React from 'react';
-import { ReactComponent as Close } from "styles/close.svg";
 
-const ModalContent = () => {
+const ModalContent = ({ content }) => {
     return (
-        <button className="modal_btn_close">
-            
-        </button>
+        <div className="modal_content">
+            <div className="modal_header">
+                <div className="modal_title">
+                    {content.title}
+                </div>
+            </div>
+            <div className="modal_content">
+                <div className="categoty_list">
+                    
+                </div>
+                {content.description}
+            </div>
+        </div>
+        
     );
 };
 

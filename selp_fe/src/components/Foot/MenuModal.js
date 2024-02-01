@@ -1,8 +1,10 @@
 import React from "react";
 import Modal from "react-modal";
 import { useState } from "react";
+import ModalContent from "./ModalContent";
+import { ReactComponent as Close } from "styles/close.svg";
 
-const MenuModal = ({ text, content }) => {
+const MenuModal = ({ modalContent }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const openModal = () => {
         setIsModalOpen(true);
@@ -32,16 +34,19 @@ const MenuModal = ({ text, content }) => {
             margin: "auto",
             borderRadius: "16px",
             boxShadow: "0 4px 10px rgba(0, 0, 0, .1)",
-            padding: "20px",
         },
     };
 
     return (
         <div>
-            <div className="menu_item" onClick={openModal}>{text}</div>
+            <div className="menu_item" onClick={openModal}>
+                {modalContent.title}
+            </div>
             <Modal isOpen={isModalOpen} onRequestClose={closeModal} style={customStyles}>
-                {content}
-                <button onClick={closeModal}>close</button>
+                <ModalContent content={modalContent}/>
+                <button onClick={closeModal} className="modal_btn_close">
+                    <Close />
+                </button>
             </Modal>
         </div>
     );
