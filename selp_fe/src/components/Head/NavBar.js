@@ -8,20 +8,36 @@ const NavBar = () => {
         <NavLink to="/" className="nav_item" activestyle="nav_item.active">
           <span className="tab_name"> 추천 </span>
         </NavLink>
-        <NavLink to="/rank" className="nav_item" activestyle="nav_item.active">
+        <NavLink
+          to="/home/rank"
+          className="nav_item"
+          activestyle="nav_item.active"
+        >
           <span className="tab_name"> 랭킹 </span>
         </NavLink>
-        <NavLink to="/lux" className="nav_item" activestyle="nav_item.active">
+        <NavLink
+          to="/home/lux"
+          className="nav_item"
+          activestyle="nav_item.active"
+        >
           <span className="tab_name">럭셔리 </span>
         </NavLink>
-        <NavLink to="/man" className="nav_item" activestyle="nav_item.active">
+        <NavLink
+          to="/home/man"
+          className="nav_item"
+          activestyle="nav_item.active"
+        >
           <span className="tab_name">남성</span>
         </NavLink>
-        <NavLink to="/woman" className="nav_item" activestyle="nav_item.active">
+        <NavLink
+          to="/home/woman"
+          className="nav_item"
+          activestyle="nav_item.active"
+        >
           <span className="tab_name">여성</span>
         </NavLink>
         <NavLink
-          to="/discover"
+          to="/home/discover"
           className="nav_item"
           activestyle="nav_item.active"
         >

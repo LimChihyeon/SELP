@@ -3,6 +3,7 @@ import Gnb from "./Gnb";
 import Top from "./Top";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
+import { Routes, Route } from "react-router-dom";
 const Header = () => {
   return (
     <header>
@@ -19,8 +20,12 @@ const Header = () => {
             </div>
           </div>
         </div>
+
         <div className="header_portal">
-          <NavBar />
+          <Routes>
+            <Route exact path="/" element={<NavBar />} />
+            <Route path="/home/*" element={<NavBar />} />
+          </Routes>
         </div>
         <hr />
       </div>
