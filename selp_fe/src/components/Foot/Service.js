@@ -11,7 +11,7 @@ const Service = () => {
             </div>
             <div className="service_time">운영시간 평일 10:00 - 18:00 (토/일, 공휴일 휴무)<br/>점심시간 평일 13:00 - 14:00
             </div>
-            <Link to="/">
+            <Link to="/faq">
                 <button className="service_btn">
                 자주 묻는 질문
                 </button>

@@ -312,3 +312,16 @@ button {
 .category_list {
   padding: 0 0 16px;
 }
+.category_chunk {
+  color: #222;
+  width: 33%;
+  display: inline-felx;
+  flex-direction: column-reverse;
+  font-size: 16px;
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+}
+.selected {
+  font-weight: 700px;
+}
