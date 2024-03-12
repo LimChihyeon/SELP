@@ -1,5 +1,6 @@
 import React from "react";
 import "styles/App.css";
+import { Link } from 'react-router-dom'
 import MenuModal from "./MenuModal";
 import Policy from "./Policy";
 
@@ -15,6 +16,10 @@ const Menu = () => {
             </div>
             <div className="menu_box">
                 <div className="menu_title">고객지원</div>
+                <Link to="/notice" style={{ textDecoration: "none"}} className="menu_link">공지사항</Link>
+                <Link to="/about" style={{ textDecoration: "none"}} className="menu_link">서비스 소개</Link>
+                <Link to="/about/store/sangsu" style={{ textDecoration: "none"}} className="menu_link">스토어 안내</Link>
+                <Link to="/about/seller_reception" style={{ textDecoration: "none"}} className="menu_link">판매자 방문접수</Link>
             </div>
         </div>
     );

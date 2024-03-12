@@ -10,7 +10,7 @@ const Policy = () => {
     ]);
     
     const [selectedDescription, setSelectedDescription] = useState('');
-    const [selectedCell, setSelectedCell] = useState({ rowIndex: -1, cellIndex: -1 });
+    /*const [selectedCell, setSelectedCell] = useState({ rowIndex: -1, cellIndex: -1 });*/
 
     const handleCellClick = (rowIndex, cellIndex, description) => {
         setSelectedCell({ rowIndex, cellIndex });
@@ -25,7 +25,7 @@ const Policy = () => {
                         {tableData.map((row, rowIndex) => (
                             <tr key={rowIndex}>
                                 {row.map((cell, cellIndex) => (
-                                    <td className={`category_chunk ${rowIndex === selectedCell.rowIndex && cellIndex === selectedCell.cellIndex ? 'selected' : ''}`} key={cellIndex} onClick={() => handleCellClick(rowIndex, cellIndex, row[tableData[0].length-1])}>
+                                    <td className="category_chunck" key={cellIndex} onClick={() => handleCellClick(rowIndex, cellIndex)}>
                                         {cell}
                                     </td>
                                 ))}
